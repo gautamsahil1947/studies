@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# directory=/notexist
+directory=/etc
+# both of those give 0 as the exit code irrespective of whether it exists
+# or not
+
+if [ -d $directory ]
+then
+    echo "The directory $directory exists."
+else
+    echo "The directory $directory doesn't exist."
+fi
+# this is because the line below shows the exit code of the last command
+# and hence the exit code that is printed is for the last echo command
+# ran and not the test.
+
+echo "The exit code for this script is: $?"
+
+# therefore it is advised to check the behaviour of the script
+# based on the intentional error induced.
+# and the exit code checking should happen at the right time.

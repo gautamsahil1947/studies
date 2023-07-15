@@ -1,0 +1,11 @@
+#!/bin/bash
+
+myname="Libre Human"
+myage="20"
+
+echo "Hello, my name is $myname"
+# if we were to use single quotes ('') instead of double quotes (""),
+# bash wouldn't substitute the $variables for the actual values that they hold
+echo "I'm $myage years old"
+# also for escaping uneven quotes, you can use \' same as python
+# variables help us avoid retyping

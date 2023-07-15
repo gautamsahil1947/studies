@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# exit code 0 --> success
+# exit code non 0 --> not successful
+
+package=neofetch
+sudo pacman -S $package
+echo "The exit code for the package installation is: $?"

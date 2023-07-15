@@ -1,8 +1,0 @@
-#!/bin/bash
-
-mkdir junk
-
-for i in {40..78}
-do
-    mv $i-script junk
-done

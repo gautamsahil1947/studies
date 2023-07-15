@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+command=btop
+
+if command -v $command
+then
+    echo "$command is available, let's run it..."
+else
+    echo "$command is NOT available, installing it..."
+    yay -S btop
+fi
+
+$command
+
+# brackets are only needef if you are running some test command
+# the command command checks for the existance of a command
+# 'command -v abc' checks whether command abc is available or not
+# man test --> gives all kinds of information about [ ] in linux

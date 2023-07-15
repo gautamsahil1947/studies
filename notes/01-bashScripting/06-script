@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# capturing the output of a command
+files=$(ls)
+now=$(date)
+# $() is known as a subshell. it allows you to execute a command in the background
+# and store the output of that commmand to some variable
+
+
+echo $files
+
+echo $now 
+# runs the date command in the background and prints the output
+# that was stored in the variable now
+date
+# simply runs the date command on bash

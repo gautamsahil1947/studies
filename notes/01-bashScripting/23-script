@@ -1,0 +1,26 @@
+#!/bin/bash
+# Unvirsal update script
+
+release_file=/etc/os-release
+
+if grep -q "Arch" $release_file
+then
+    # the host is based on Arch, run the pacman update command
+    sudo pacman -Syu
+fi
+
+if grep -q "Ubuntu" $release_file || grep -q "Debian" $release_file
+then
+    # the host is based on Debian, or Ubuntu
+    sudo apt update
+    sudo apt dist-upgrade
+fi
+
+# grep -q abc def
+#   search quitely for the string pattern abc
+#   inside the file def
+#   QUITELY
+
+
+# || ---> or
+# && ---> and

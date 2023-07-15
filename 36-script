@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# arguments to the bash scripts
-echo "You entered the argument: $1, $2, $3 and $4"
-echo "$0" # this holds the file name
-# if you provide an argument then the $1 is replaced with the first argument

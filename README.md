@@ -1,9 +1,8 @@
-```bash
-export PATH=/home/librehuman/.local/bin:$PATH
-# the above is how you add some folder of executables to the path variable
-# for the system to know where to look
+### About this repo
 
+this repository is to keep all the books and the notes related to those things
+for example,
 
-2>&1
-# this means that direct the stderr to where stdout is directed
-```
+    all the books will be in one folder
+    all the notes will be in another folder
+    all the program files will be in another folder

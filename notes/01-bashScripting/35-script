@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+# yay -S cron
+# it is advised/a best practice to use fully qualified commands like usr/bin/echo rather than echo
+# can be found using 'which' command
+# this improves the security and more secure is always better
+# run crontab -e to configure text editor of choice
+
+logfile=job_results.log
+
+/usr/bin/echo "The script ran at the following time: $(/usr/bin/date)" > $logfile
+# write crontab -e
+# a file will open in vi
+
+# * means doesn't matter
+# both 0 and 7 represent Sunday
+# 30 1 * * 5 (path to the script)
+# minutes hours day month dayOfTheWeek
+# military time
+# -u flag can be used to run cronjobs for other users
