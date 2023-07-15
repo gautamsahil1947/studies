@@ -1,0 +1,11 @@
+#!/bin/bash
+
+myvar=1
+
+while [ -f ~/libre ]
+do
+    echo "As of $(date) the libre file exists"
+    sleep 5
+done
+
+echo "As of $(date) the file no longer exists. Exiting."

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+myname="Libre Human"
+# echo myname does not work. it literally prints myname. "" in echo are not mendatory
+echo $myname
+# $varname is how you reference a variable in bash
+ls="Hello Again"
+echo $ls
+# $ helps to avoid name collisions.
+# any variable declared inside bash is tied to that session of bash
+# they don't persist

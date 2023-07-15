@@ -1,0 +1,11 @@
+#!/bin/bash
+
+expr 30 + 50
+expr 30 - 50
+# expr 30 * 50
+# the above command shows syntax error because '*' in bash represents wildcard character
+expr 30 \* 50
+
+munum1=30
+expr $munum1 + 50
+

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+myvar=1
+
+while [ $myvar -le 10 ]
+do
+    echo $myvar 
+    myvar=$(( $myvar + 1 )) 
+    sleep 0.5 
+done
+
+# declaring a variable
+# condition -> is the value of myvar <= 10
+# echo the content of myvar
+# create another myvar variable and 
+# give a value of myvar + 1
+# sleep for 0.5 seconds

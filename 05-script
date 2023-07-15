@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+# echo "Linux is awesome"
+# echo "Videogames are awesome"
+# echo "Sunny days are awesome"
+
+# but what if we were to change this word awesome,
+# then we would have to do it in all the 3 places (repetition)
+
+word="not awesome"
+
+echo "Linux is $word"
+echo "Videogames are $word"
+echo "Sunny days are $word"

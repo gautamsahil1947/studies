@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# stdin -> standard input
+# input by the user
+echo "Please enter your name:"
+read myname
+echo "Your name is $myname"
