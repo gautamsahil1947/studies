@@ -1,8 +1,10 @@
-### About this repo
+```cpp
+__        __   _
+\ \      / /__| | ___ ___  _ __ ___   ___
+ \ \ /\ / / _ \ |/ __/ _ \| '_ ` _ \ / _ \
+  \ V  V /  __/ | (_| (_) | | | | | |  __/
+   \_/\_/ \___|_|\___\___/|_| |_| |_|\___|
+```
 
-this repository is to keep all the books and the notes related to those things
-for example,
-
-    all the books will be in one folder
-    all the notes will be in another folder
-    all the program files will be in another folder
+This directory contains all the notes related to my studies.
+Have fun Learning.
