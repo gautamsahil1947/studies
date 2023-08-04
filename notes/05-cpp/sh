@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+# create files from 0 till 9
+# for i in {0..9}
+# do
+#     touch "0$i.cpp"
+# done
+#
+# # create files from 10 till 99
+# for i in {10..99}
+# do
+#     touch "$i.cpp"
+# done
+
+# if need further, then extend accordingly, but comment the others
+# so that they don't overwrite the older files.
