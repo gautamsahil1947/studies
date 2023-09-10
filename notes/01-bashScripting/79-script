@@ -2,7 +2,9 @@
 
 mkdir junk
 
-for i in {40..78}
+for i in {40..55}
 do
-    mv $i-script junk
+    touch "$i-script"
+    chmod +x "$i-script"
+    echo "#!/bin/bash" >> "$i-script"
 done

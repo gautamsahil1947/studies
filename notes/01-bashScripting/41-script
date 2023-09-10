@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# this would be the array of packages
+countries=(
+    "India"
+    "France" 
+    "United Kingdom"
+)
+
+# the packages will be installed, and
+# based on the return value, a log file will be created
+# with messages as 
+#
+# [Red]     ERROR: PackageName ..... 
+# [Green]   OK:    PackageName 
+
+for country in "${countries[@]}"
+do
+    echo "$country"
+done

@@ -114,4 +114,16 @@
    - And the same thing repeates, and hop by hop, the packet reaches the destination.
    - each time a router sends a packet, it adds a sequence number to it.
 ** RIP (routing information protocol)
-   
+* Networking commands 
+  #+begin_src bash
+    $ # PC Configuration
+    $ ipconfig 10.0.0.2 255.0.0.0 10.0.0.1
+    $ # Router Configuration
+    $ en
+    $ config t 
+    $ # Port configuration
+    $ en interface GigabitEthernet 0/0/0 
+    $ ip address 10.0.0.1 255.0.0.0
+    $ # Static Ip configuration
+    $ ip route targetNetworkIP subnetMask NextHopIp
+  #+end_src
