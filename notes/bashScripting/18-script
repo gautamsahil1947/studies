@@ -1,9 +1,0 @@
-#!/bin/bash
-
-echo "Hello world"
-exit 1
-echo $?
-# but why doesn't it echo the exit code as the last line says
-# this is because the exit command exits the script with that exit code
-# and therefore the last line is not executed
-# the echo $? is never executed

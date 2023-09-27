@@ -1,0 +1,6 @@
+#!/bin/bash 
+
+# called a shebang
+
+ls
+pwd

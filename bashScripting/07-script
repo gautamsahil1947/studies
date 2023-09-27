@@ -1,0 +1,19 @@
+#!/bin/bash
+
+name="Libre Human"
+now=$(date)
+
+echo "Hello $name"
+echo "The system time and date is:"
+echo $now
+
+echo "Your username is: $USER"
+# but we didn't declare USER variable.
+# within the environment there are a bunch of variables declared bydefault
+# $USER is an environment variable which contains the name of the user currently logged in
+# case of variable names has an importance
+#   system variables are uppercase
+#   your variables are lowercase
+
+
+# env shows all the system variables

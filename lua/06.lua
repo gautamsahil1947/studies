@@ -1,0 +1,20 @@
+local str = "22"
+print(type(tonumber(str)))
+-- tonumber(n) function converts string to number
+print(5)
+print("Sum         :" .. 5 + 5)
+print("Product     :" .. 5 * 5)
+print("Exponent    :" .. 2 ^ 5)
+print("Division    :" .. 100 / 3)
+print("Modulo      :" .. 100 % 3)
+
+print("Pi          :" .. math.pi)
+math.randomseed(os.time())
+print("Random no   :" .. math.random())
+print(os.time())
+print("Random no less than 10   :" .. math.random(10))
+print("Random no bw 10 and 50   :" .. math.random(10, 50))
+print("Min number:              :" .. math.min(10, 4, 44, 0, -99))
+print("Max number:              :" .. math.max(10, 4, 44, 0, -99))
+print("Floor of a number        :" .. math.floor(49.4444))
+print("Ceil of a number         :" .. math.ceil(49.4444))

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+directory=/etc
+
+if [ -d $directory ]
+then
+    echo "The directory $directory exists."
+    exit 0
+else
+    echo "The directory $directory doesn't exist."
+    exit 1
+fi
+
+echo "The exit code for the script runis: $?"
+echo "You didn't see that statement."
+echo "You won't see this one either."
+
+# giving exit codes inside the if statements gives us more control to 
+# the user of the script on the exit codes

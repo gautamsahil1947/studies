@@ -1,0 +1,40 @@
+#!/bin/bash
+# functions in bash  update script
+
+release_file=/etc/os-release
+logfile=/var/log/updater.log
+errorlog=/var/log/updater_errors.log
+
+check_exit_status() {
+    if [ $? -ne 0 ] 
+    then
+        echo "An error occured, please check the $errorlog file."
+    else
+        echo "No error occured."
+    fi
+}
+
+release_file=/etc/os-release
+logfile=/var/log/updater.log
+errorlog=/var/log/updater_errors.log
+
+if grep -q "Arch" $release_file
+then
+    # the host is based on Arch, run the pacman update command
+    # this waits for confirmation LOL
+    sudo pacman -Syu --noconfirm 1>$logfile 2>$errorlog
+    check_exit_status
+fi
+
+
+if grep -q "Pop" $release_file || grep -q "Ubuntu" $release_file
+then
+    # the host is based on Ubuntu
+    # run the apt version of the command
+
+    sudo apt update 1>$logfile 2>$errorlog
+    check_exit_status
+    sudo apt dist-upgrade
+    check_exit_status
+fi
+

@@ -7,4 +7,5 @@ __        __   _
 ```
 
 This directory contains all the notes related to my studies.
+Bashically source code files (organised properly)
 Have fun Learning.
